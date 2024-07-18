@@ -97,6 +97,7 @@ requirements:
     - libclang
     - llvmdev  {{ cxx_compiler_version }}  # [osx]
     - clangdev {{ cxx_compiler_version }}  # [osx]
+    - zstd
   run:
     - python
 
