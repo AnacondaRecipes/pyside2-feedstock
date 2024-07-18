@@ -1,8 +1,11 @@
-# https://doc.qt.io/qt-6/macos.html
-c_stdlib_version:          # [osx]
-  - '11.0'                 # [osx]
-MACOSX_SDK_VERSION:        # [osx]
-  - '12.3'                 # [osx]
-
-c_stdlib_version:          # [linux and x86_64]
-  - 2.17                   # [linux and x86_64]
+MACOSX_SDK_VERSION:
+  - '11.3'                                                   # [osx]
+CONDA_BUILD_SYSROOT:
+  - /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk  # [osx]
+c_compiler:
+  - vs2019  # [win]
+cxx_compiler:
+  - vs2019  # [win]
+macos_machine:
+  - x86_64-apple-darwin20.0.0  # [osx and x86_64]
+  - arm64-apple-darwin20.0.0   # [osx and arm64]
